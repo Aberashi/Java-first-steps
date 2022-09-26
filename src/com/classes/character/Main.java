@@ -14,7 +14,7 @@ public class Main {
          * vytvorenou promennou.
          */
 
-        Entity wizard = new Entity("Hermion", 69, 200);
+        Entity wizard = new Entity("Herion", 69, 200);
         Sorcerer supreme = new Sorcerer("Strange", 200, 20, 2);
         Archer hood = new Archer("Robin", 50, 5, 500);
         Warrior sparta = new Warrior("Leonidas", 300, 3, 3000);
