@@ -1,19 +1,25 @@
 package com.classes.character;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        // UKOL 3
-        /*
-         * Vytvor 1-3 potomky tridy "Entity" a pridej jim alespon jednu novou promennou.
-         * Trida potomka bude obsahovat 2 konstruktory.
-         * Trida potomka obsahovat metody GET(), SET() pro nove vytvorenou promennou.
-         * Trida potomka bude mit prepsanou(@Override) metodu toString(), ktera prida
-         * informaci o nove promenne.
-         * Vytvor novou instanci tridy potomka a vypis jeho informaci i s nove
-         * vytvorenou promennou.
-         */
+       /*
+       * Create a form, where you ask user for a name, Entity type (Warrior, Sorcerer, Archer).
+       * Based on that information, create Entity subclass, where the name is the user input name and
+       * create class corresponding to the user choice.
+       * Check for null inputs.
+       * The name should include only big/small letters and numbers ONLY.
+       * Print out the user created character to the console.
+       *
+       * QUICK TIP:
+       * Recommend using switch statement on creating class.
+       * To get user input use Scanner class from the java.util.Scanner.
+       * Use "System.in" as argument when creating instance of the Scanner.
+       */
 
+        Scanner scanner = new Scanner(System.in);
         Entity wizard = new Entity("Hermion", 69, 200);
         Sorcerer supreme = new Sorcerer("Strange", 200, 20, 2);
         Archer hood = new Archer("Robin", 50, 5, 500);
