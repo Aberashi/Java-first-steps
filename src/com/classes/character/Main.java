@@ -1,5 +1,8 @@
 package com.classes.character;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -17,14 +20,20 @@ public class Main {
        * Use "System.in" as argument when creating instance of the Scanner.
        */
 
-        Entity wizard = new Entity("Hermion", 69, 200);
-        Sorcerer supreme = new Sorcerer("Strange", 200, 20, 2);
-        Archer hood = new Archer("Robin", 50, 5, 500);
-        Warrior sparta = new Warrior("Leonidas", 300, 3, 3000);
+        System.out.println("Welcome, choose your character!");
+        System.out.println("Archer, Sorcerer, Warrior");
 
-        System.out.println(wizard.toString());
-        System.out.println(supreme.toString());
-        System.out.println(hood.toString());
-        System.out.println(sparta.toString());
+
+        Scanner sc = new Scanner(System.in);
+        String charType = sc.next();
+        if (charType.equals("Archer")){
+            System.out.println("You chose Archer. Enter your name.");
+            System.out.print("Name: ");
+            String name = sc.next();
+            Archer archer = new Archer(name);
+            System.out.println(archer.toString());
+
+        }
+
     }
 }

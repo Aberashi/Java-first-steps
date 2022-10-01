@@ -7,6 +7,12 @@ public class Archer extends Entity {
         super(name, health, mana);
         this.agility = agility;
     }
+    public Archer(String name) {
+        super.name = name;
+        health = 100;
+        setMana(50);
+        agility = 20;
+    }
 
     public Archer() {
         super();

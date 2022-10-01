@@ -1,9 +1,9 @@
 package com.classes.character;
 
 public class Entity {
-    private String name;
-    private int health;
-    private int mana;
+    protected String name;
+    protected int health;
+    protected int mana;
 
     public Entity(String name, int health, int mana) {
         this.name = name;
