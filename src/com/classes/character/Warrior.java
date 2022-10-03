@@ -7,6 +7,12 @@ public class Warrior extends Entity {
         super(name, health, mana);
         this.strength = strength;
     }
+    public Warrior(String name){
+        super.name = name;
+        health = 150;
+        mana = 50;
+        strength = 20;
+    }
     public Warrior (){
         super();
         strength = 20;

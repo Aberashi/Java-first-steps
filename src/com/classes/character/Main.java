@@ -22,18 +22,43 @@ public class Main {
 
         System.out.println("Welcome, choose your character!");
         System.out.println("Archer, Sorcerer, Warrior");
+        System.out.print("Class: ");
 
 
         Scanner sc = new Scanner(System.in);
-        String charType = sc.next();
-        if (charType.equals("Archer")){
-            System.out.println("You chose Archer. Enter your name.");
-            System.out.print("Name: ");
-            String name = sc.next();
-            Archer archer = new Archer(name);
-            System.out.println(archer.toString());
 
+        boolean done = false;
+        while (done == false ){
+            switch (sc.next()) {
+                case "Archer" -> {
+                    System.out.println("You chose Archer. Enter your name.");
+                    System.out.print("Name: ");
+                    String archName = sc.next();
+                    Archer archer = new Archer(archName);
+                    System.out.println(archer.toString());
+                    done = true;
+                }
+                case "Sorcerer" -> {
+                    System.out.println("You chose Sorcerer. Enter your name.");
+                    System.out.print("Name: ");
+                    String sorName = sc.next();
+                    Sorcerer sorcerer = new Sorcerer(sorName);
+                    System.out.println(sorcerer.toString());
+                    done = true;
+                }
+                case "Warrior" -> {
+                    System.out.println("You chose Warrior. Enter your name.");
+                    System.out.print("Name: ");
+                    String warName = sc.next();
+                    Warrior warrior = new Warrior(warName);
+                    System.out.println(warrior.toString());
+                    done = true;
+                }
+                default -> {
+                    System.out.println("Please write the class name correctly! For example \"Warrior\" ");
+                    System.out.print("Class: ");
+                }
+            }
         }
-
     }
 }

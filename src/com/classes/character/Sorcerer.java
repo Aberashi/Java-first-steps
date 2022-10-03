@@ -7,6 +7,13 @@ public class Sorcerer extends Entity {
         super(name, health, mana);
         this.intelligence = intelligence;
     }
+    public Sorcerer(String name){
+        super.name = name;
+        health = 80;
+        mana = 120;
+        intelligence = 20;
+
+    }
     public Sorcerer (){
         super();
         intelligence = 20;
