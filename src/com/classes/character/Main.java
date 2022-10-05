@@ -10,7 +10,7 @@ public class Main {
        * Create a form, where you ask user for a name, Entity type (Warrior, Sorcerer, Archer).
        * Based on that information, create Entity subclass, where the name is the user input name and
        * create class corresponding to the user choice.
-       * Check for null inputs.
+       * Check for null or empty string inputs.
        * The name should include only big/small letters and numbers ONLY.
        * Print out the user created character to the console.
        *
