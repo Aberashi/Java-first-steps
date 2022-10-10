@@ -16,6 +16,7 @@ public class Archer extends Entity {
 
     public Archer() {
         super();
+        mana = 20;
         agility = 20;
     }
 

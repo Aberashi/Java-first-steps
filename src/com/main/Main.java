@@ -1,4 +1,9 @@
-package com.classes.character;
+package com.main;
+
+import com.classes.character.Archer;
+import com.classes.character.Entity;
+import com.classes.character.Sorcerer;
+import com.classes.character.Warrior;
 
 import java.sql.SQLOutput;
 import java.util.Scanner;
@@ -20,6 +25,14 @@ public class Main {
        * To get user input use Scanner class from the java.util.Scanner.
        * Use "System.in" as argument when creating instance of the Scanner.
        */
+
+
+/*        Entity arch = new Archer();
+        System.out.println(arch.toString());
+        Archer newArch = (Archer)arch;
+        System.out.println(arch.toString());
+        arch = (Entity) newArch;
+        System.out.println(arch.toString());*/
 
         System.out.println("Welcome, choose your character!");
         System.out.println("Archer, Sorcerer, Warrior");
