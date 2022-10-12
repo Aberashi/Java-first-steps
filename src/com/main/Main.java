@@ -13,17 +13,12 @@ public class Main {
     public static void main(String[] args) {
 
        /*
-       * Create a form, where you ask user for a name, Entity type (Warrior, Sorcerer, Archer).
-       * Based on that information, create Entity subclass, where the name is the user input name and
-       * create class corresponding to the user choice.
-       * Check for null or empty string inputs.
-       * The name should include only big/small letters and numbers ONLY.
-       * Print out the user created character to the console.
-       *
-       * QUICK TIP:
-       * Recommend using switch statement on creating class.
-       * To get user input use Scanner class from the java.util.Scanner.
-       * Use "System.in" as argument when creating instance of the Scanner.
+        * Create class called GameManager.
+        * The GameManager will have method called RegisterNewCharacter that functions exactly as the current main function.
+        * Optimize the method with checking inputs first and than decide what class to create and what name to attach to it.
+        * TIP:
+        * Try to implement reflection for creating classes based on the String input.
+        * https://stackoverflow.com/questions/7495785/java-how-to-instantiate-a-class-from-string
        */
 
 
