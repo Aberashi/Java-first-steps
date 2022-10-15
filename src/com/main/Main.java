@@ -21,14 +21,18 @@ public class Main {
         * https://stackoverflow.com/questions/7495785/java-how-to-instantiate-a-class-from-string
        */
 
-
-/*        Entity arch = new Archer();
-        System.out.println(arch.toString());
-        Archer newArch = (Archer)arch;
-        System.out.println(arch.toString());
-        arch = (Entity) newArch;
-        System.out.println(arch.toString());*/
-
+//
+//        Entity arch = new Archer();
+//        System.out.println(arch.toString());
+//
+//        newArch.setAgility(50);
+//        System.out.println(newArch.toString());
+//        arch = (Entity) newArch;
+//        System.out.println(arch.toString());
+//
+//        if (Archer.class.isInstance(arch)){
+//            ((Archer)arch).getAgility();
+//        }
         System.out.println("Welcome, choose your character!");
         System.out.println("Archer, Sorcerer, Warrior");
         System.out.print("Class: ");
