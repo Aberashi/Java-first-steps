@@ -10,8 +10,6 @@ public class Main {
     public static void main(String[] args) {
 
         /*
-         * Create class called GameManager.
-         * The GameManager will have method called RegisterNewCharacter that functions exactly as the current main function.
          * Optimize the method with checking inputs first and than decide what class to create and what name to attach to it.
          * TIP:
          * Try to implement reflection for creating classes based on the String input.
@@ -31,6 +29,6 @@ public class Main {
 //            ((Archer)arch).getAgility();
 //        }
         GameManager one = new GameManager();
-        one.registerNwCharacter();
+        one.registerNewCharacter();
     }
 }
